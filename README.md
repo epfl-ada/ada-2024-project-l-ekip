@@ -7,11 +7,11 @@ Hana Salvetová, Nour Guermazi, Kelu Huang, Louis Martins and Quentin Chappuis
 2. Create a folder `dataset/` at the root of the repo
 3. Unzip the data you downloaded in the dataset folder
 ### Research questions
-1. How do Hollywood films perform compared to local productions in terms of box office revenue on domestic and international stages? -> pas ouf
-2. What patterns emerge when box office revenue is normalized by population and economic size across various regions? We will focus only on certain countries
+1. How do local productions perform in terms of box office revenue on domestic and international stages?
+2. What patterns emerge when box office revenue is normalized by population and by ticket price across various regions? We will focus only on the most interesting countries from various places on earth
 3. How do cultural elements (local actors, themes, and music) influence the success of local productions in their domestic markets?
-4. Which regions exhibit the highest preference for local films over global Hollywood blockbusters, and why?
-5. Is box office revenue a reliable indicator of movie success across different regions, considering economic and demographic variations?
+4. Which regions exhibit the highest preference for local films over global blockbusters, and why?
+5. 
 ### Additional datasets
 1. Local Box Office Data: Data on box office performance by country or region, detailing revenue from both local and Hollywood films
     - https://www.kaggle.com/datasets/slmsshk/bollywood-release-movie-dataset
