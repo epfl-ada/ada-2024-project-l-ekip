@@ -14,49 +14,81 @@ Hana Salvetová, Nour Guermazi, Kelu Huang, Louis Martins and Quentin Chappuis
 To enrich our analysis and provide a more comprehensive understanding of global cinema trends, we integrated several external datasets:
 ### Economic Data
 **Cost of Living**: cost-of-living_v2.csv – Contains data on average ticket prices and other living costs by country. 
+<br>
 [Download](https://www.kaggle.com/datasets/mvieira101/global-cost-of-living)
+<br>
 **Inflation Data (1970-2022)**: Global Dataset of Inflation.csv – Provides inflation rates globally, used to adjust box office revenue to constant dollars.
+<br>
 [Download](https://www.kaggle.com/datasets/belayethossainds/global-inflation-dataset-212-country-19702022)
+<br>
 **Inflation Data (1915-1969)**: Historical inflation data for adjusting older revenues to current dollars.
 [Link to the data](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/)
+<br>
 **GDP Growth Data**: Global GDP growth data to understand the economic context of a region and its impact on the film industry.
+<br>
 [Download](https://www.kaggle.com/datasets/sazidthe1/world-gdp-growth)
 
 
 ### Demographic Data
+
 **World Population**: world_population.csv – Includes population data by country, which is essential for normalizing box office data and understanding audience size.
+<br>
 [Download](https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)
 
 
 ### Box Office Data 
 **Box Office**: Additional data on box office scrapped from "Box Office Mojo" and "The Numbers" 
+<br>
  			[Box Office Mojo](https://www.boxofficemojo.com/)  
+<br>
  			[The Numbers](https://www.the-numbers.com/)
 
 ### Datasets Description
-The provided dataset contains movie metadata (e.g., release dates, box office revenue) and character metadata (e.g., actor names, ethnicity). 
 
+The provided dataset contains movie metadata (e.g., release dates, box office revenue) and character metadata (e.g., actor names, ethnicity). 
+<br>
 To provide a broader economic and demographic context, we supplement this with external datasets:
+<br>
 **Economic data**: average ticket prices, inflation rates, and GDP, essential for adjusting box office figures over 100 years of cinema history.
+<br>
 **Demographic data**: population figures to better understand audience size and regional market characteristics.
+<br>
 **Box office data**: an indicator on films success in terms of cinema entry sales.
 
 ### Methods
+
 **Data selection**: We identified relevant economic, demographic, and movie metadata to address research questions on global cinema trends.
+<br>
 **Data collection**: we downloaded datasets from Kaggle in .csv format, (inflation, population data) and we scrapped global and local box office revenues from "Box Office Mojo" and "The Numbers" to account for the high percentage of missing box office value in the movie metadata dataset.
+<br>
 **Data preprocessing**: cleaning and merging datasets to create a unified data frame, standardizing columns, filling missing values, and removing irrelevant data.
+<br>
 **Mathematical adjustments**: applying normalization techniques, such as adjusting box office revenue for inflation, population size, and GDP per capita to allow meaningful comparisons.
+<br>
 **Visualization**: using matplotlib and seaborn to create heatmaps, box plots, and line charts that reveal trends and patterns in box office success, genre popularity, and ticket prices across countries.
+<br>
 **Country selection**: to determine the most impactful countries in the film industry, we selected nations from each region of the world, ensuring a minimum of two per region. Our selection focused on countries with the highest box office revenues, making them the most relevant for our study.
+<br>
 ### Timeline
+
 **Week 1**: Detailed analysis of datasets, conduct data cleaning and pre processing 
+<br>
 **Week 2**: Implement methods to answer proposed research questions 1
+<br>
 **Week 3**: Implement methods to answer proposed research questions 2
+<br>
 **Week 4**:  Implement methods to answer proposed research questions 3
+<br>
 **Week 5**: Gather all results and synthesize our findings in the final version of the data story, publish it on GitHub.
+<br>
 ### Organization within the team
+
 **Hana** will take care of the data cleaning and preprocessing. She will ensure the datasets are ready for analysis by removing irrelevant data, filling missing values, and standardizing columns across datasets.
+<br>
 **Louis** will handle the mathematical methods, focusing on normalization and statistical analysis. He will integrate inflation data to adjust box office figures, allowing for accurate historical comparisons.
+<br>
 **Quentin** will develop extensive visualization methods tailored to each research question. He will use tools like matplotlib and seaborn to create heatmaps, box plots, and line charts that illustrate trends and patterns across various datasets.
+<br>
 **Kelu** will synthesize all results into coherent findings. He will prepare the final data story by collating insights from each analysis phase and ensuring they are clearly communicated.
+<br>
 **Nour** will lead the writing of the data story, focusing on articulating the project's findings and implications. She will develop the website representing the project.
