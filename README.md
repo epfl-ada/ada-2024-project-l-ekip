@@ -14,33 +14,27 @@ Hana Salvetová, Nour Guermazi, Kelu Huang, Louis Martins and Quentin Chappuis
 To enrich our analysis and provide a more comprehensive understanding of global cinema trends, we integrated several external datasets:
 ### Economic Data
 - **Cost of Living**: cost-of-living_v2.csv – Contains data on average ticket prices and other living costs by country. 
-  
     [Download](https://www.kaggle.com/datasets/mvieira101/global-cost-of-living)
 
 - **Inflation Data (1970-2022)**: Global Dataset of Inflation.csv – Provides inflation rates globally, used to adjust box office revenue to constant dollars.
-
     [Download](https://www.kaggle.com/datasets/belayethossainds/global-inflation-dataset-212-country-19702022)
 
 - **Inflation Data (1915-1969)**: Historical inflation data for adjusting older revenues to current dollars.
-
     [Link to the data](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/)
 
 - **GDP Growth Data**: Global GDP growth data to understand the economic context of a region and its impact on the film industry.
-
     [Download](https://www.kaggle.com/datasets/sazidthe1/world-gdp-growth)
 
 
 ### Demographic Data
-**World Population**: world_population.csv – Includes population data by country, which is essential for normalizing box office data and understanding audience size.
-<br>
-[Download](https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)
+- **World Population**: world_population.csv – Includes population data by country, which is essential for normalizing box office data and understanding audience size.
+    [Download](https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)
 
 
 ### Box Office Data 
-**Box Office**: Additional data on box office scrapped from "Box Office Mojo" and "The Numbers" 
-<br>
- 			[Box Office Mojo](https://www.boxofficemojo.com/)  
- 			[The Numbers](https://www.the-numbers.com/)
+- **Box Office**: Additional data on box office scrapped from "Box Office Mojo" and "The Numbers" 
+ 	[Box Office Mojo](https://www.boxofficemojo.com/)  
+ 	[The Numbers](https://www.the-numbers.com/)
 
 ### Datasets Description
 
