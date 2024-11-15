@@ -1,5 +1,6 @@
 # Globalization of Cinema: A Comparative Study of National Film Industries
-This project explores the globalization of cinema through a comparative analysis of national film industries, examining the impact of economic, cultural, and demographic factors on local and international box office performance. By integrating movie metadata with relevant economic and demographic data, we aim to identify key trends influencing film performance across different markets, explore regional preferences, and assess the role of cultural elements such as local actors and themes in shaping commercial success. Our study also delves into the dynamics of global film distribution, highlighting the relationship between national cinemas and Hollywood's dominance. By analyzing patterns in genre popularity, audience engagement, and economic contexts, we provide insights into how regional and global industries have evolved over time. This research contributes to understanding global cultural exchanges and underscores the factors driving the enduring appeal of national cinemas amid globalization, enriching our knowledge of the global cinematic landscape.
+This project explores the globalization of cinema through a comparative analysis of national film industries, examining the impact of economic, cultural, and demographic factors on local and international box office performance. By integrating movie metadata with relevant economic and demographic data, we aim to identify key trends influencing film performance across different markets, explore regional preferences, and assess the role of cultural elements such as local actors and themes in shaping commercial success. Our study also dives into the dynamics of global film distribution, highlighting the relationship between national cinemas and Hollywood's dominance. By analyzing patterns in genre popularity, audience engagement, and economic contexts, we provide insights into how regional and global industries have evolved over time. This research helps us better understand global cultural exchanges , giving us deeper insight into the worldwide film scene. 
+
 ## Authors
 Hana Salvetová, Nour Guermazi, Kelu Huang, Louis Martins and Quentin Chappuis
 ## How to use the dataset?
@@ -9,7 +10,7 @@ Hana Salvetová, Nour Guermazi, Kelu Huang, Louis Martins and Quentin Chappuis
 ## Research questions
 1. How have regional and global film industries evolved over time? How shifts in economic, culture, technological and demographic context influenced the development in filmmaking?
 2. How do films perform in terms of box office revenue both domestically and internationally? Which regions exhibit the highest preference for local films over global blockbusters, and why?
-3. How have regional specificities, including culturally significant themes, genres, and the presence of local actors, evolved over time in comparison to global filmmaking trends? In what ways does the shifting popularity and influence of local actors impact the success of films within their domestic markets over time, and how does this dynamic affect their international appeal?
+3. How have regional traits like themes, genres, and local actors evolved compared to global trends? Moreover, how has the rising popularity of local actors affected films' success at home and their appeal abroad?
 ## Additional datasets
 To enrich our analysis and provide a more comprehensive understanding of global cinema trends, we integrated several external datasets:
 ### Economic Data
@@ -19,7 +20,7 @@ To enrich our analysis and provide a more comprehensive understanding of global 
 - **Inflation Data (1970-2022)**: Global Dataset of Inflation.csv – Provides inflation rates globally, used to adjust box office revenue to constant dollars.
     [Download](https://www.kaggle.com/datasets/belayethossainds/global-inflation-dataset-212-country-19702022)
 
-- **Inflation Data (1915-1969)**: Historical inflation data for adjusting older revenues to current dollars.
+- **Inflation Data (1915-1969)**: Historical US inflation data (we only use the data up to 1969 to fill in the missing values of the global inflation data we already have) for adjusting older revenues to current dollars.
     [Link to the data](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/)
 
 - **GDP Growth Data**: Global GDP growth data to understand the economic context of a region and its impact on the film industry.
@@ -52,7 +53,7 @@ To provide a broader economic and demographic context, we supplement this with e
 
 - **Data selection**: We identified relevant economic, demographic, and movie metadata to address research questions on global cinema trends.
 
-- **Data collection**: we downloaded datasets from Kaggle in .csv format, (inflation, population data) and we scrapped global and local box office revenues from "Box Office Mojo" and "The Numbers" to account for the high percentage of missing box office value in the movie metadata dataset.
+- **Data collection**: we downloaded datasets from Kaggle in .csv format, (inflation, population data) and we scrapped global and local box office revenues from "Box Office Mojo" and "The Numbers" to account for the high percentage of missing box office value in the CMU movie metadata dataset.
 
 - **Data preprocessing**: cleaning and merging datasets to create a unified data frame, standardizing columns, filling missing values, and removing irrelevant data.
 
