@@ -1,19 +1,19 @@
 # Globalization of Cinema: A Comparative Study of National Film Industries
-This project investigates the globalization of cinema through a comparative analysis of national film industries, focusing on the impact of economic, cultural, and demographic factors on local and international box office performance. By integrating movie metadata with economic and demographic data, we identify key trends shaping film performance across markets and explore regional preferences. The study also examines the evolution of film genres and how significant historical and cultural events have influenced cinematic trends. Additionally, we analyze the dynamics of global film distribution, emphasizing the interplay between national cinemas and Hollywood's dominance. Through these insights, we aim to better understand global cultural exchanges and the forces driving the international film landscape.
+à changer
 
 ## Website Link
 https://titi1000.github.io/ada-website/
 
 ## Authors
-Hana Salvetová,Quentin Chappuis,Louis Martins, Kelu Huang and Nour Guermazi.
+Hana Salvetová, Quentin Chappuis, Louis Martins, Kelu Huang and Nour Guermazi.
 ## How to use the dataset?
 1. Download the data [here](https://www.cs.cmu.edu/~ark/personas/)
 2. Create a folder `dataset/` at the root of the repo
 3. Unzip the data you downloaded in the dataset folder
 ## Research questions
-1.How have regional and global film industries transformed over time, and what roles have economic, cultural, technological, and demographic shifts played in shaping these changes?
-2. What patterns emerge in box office performance when comparing domestic and international markets, and which regions demonstrate the strongest preference for local films over global blockbusters?
-3. How have global genre trends evolved over time, and what do these trends reveal about the shifting preferences of international audiences? What do regional genre preferences reveal about the distinct tastes of local audiences?
+1. How have economic and population shifts influenced box office revenues in regional and global film industries over the last century?
+2. How have significant historical events of the last century shaped the development and success of cinema in different countries?
+3. How do domestic and international box office trends vary by country, and how do these trends reflect differences in genre popularity? 
 ## Additional datasets 
 To enrich our analysis and provide a more comprehensive understanding of global cinema trends, we integrated several external datasets: 
 ### Economic Data
@@ -44,8 +44,6 @@ To provide a broader economic and demographic context, we supplement this with e
 - **Box office data**: An indicator on films success in terms of cinema entry sales.
 
 ### Methods
-
-
 
 - **Data selection**: We identified relevant economic, demographic, and movie metadata to address research questions on global cinema trends. 
 
