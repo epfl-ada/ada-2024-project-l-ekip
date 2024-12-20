@@ -1,4 +1,4 @@
-# Globalization of Cinema: A Comparative Study of National Film Industries
+# Globalisation of Cinema: A Comparative Study of National Film Industries
 This project explores the evolution of global cinema through an analysis of regional and international film industries, focusing on how economic and demographic shifts have influenced box office performance. By examining significant historical events, we aim to reveal their impact on audience behaviors and the development of local film industries. The study investigates domestic and international box office trends, revealing variations across countries and the interaction between regional preferences and global patterns. Furthermore, it examines the progression of film genres over time, highlighting the impact of important historical events on the cinematographic industry. 
 
 ## Website Link
