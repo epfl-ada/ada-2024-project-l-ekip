@@ -1,27 +1,22 @@
 # Globalization of Cinema: A Comparative Study of National Film Industries
-This project explores the globalization of cinema through a comparative analysis of national film industries, examining the impact of economic, cultural, and demographic factors on local and international box office performance. By integrating movie metadata with relevant economic and demographic data, we aim to identify key trends influencing film performance across different markets, explore regional preferences, and assess the role of cultural elements such as local actors and themes in shaping commercial success. Our study also delves into the dynamics of global film distribution, highlighting the relationship between national cinemas and Hollywood's dominance. By analyzing patterns in genre popularity, audience engagement, and economic contexts, we provide insights into how regional and global industries have evolved over time. This research contributes to understanding global cultural exchanges and underscores the factors driving the enduring appeal of national cinemas amid globalization, enriching our knowledge of the global cinematic landscape.
+This project investigates the globalization of cinema through a comparative analysis of national film industries, focusing on the impact of economic, cultural, and demographic factors on local and international box office performance. By integrating movie metadata with economic and demographic data, we identify key trends shaping film performance across markets and explore regional preferences. The study also examines the evolution of film genres and how significant historical and cultural events have influenced cinematic trends. Additionally, we analyze the dynamics of global film distribution, emphasizing the interplay between national cinemas and Hollywood's dominance. Through these insights, we aim to better understand global cultural exchanges and the forces driving the international film landscape.
+
+## Website Link
+https://titi1000.github.io/ada-website/
+
 ## Authors
-Hana Salvetová, Nour Guermazi, Kelu Huang, Louis Martins and Quentin Chappuis
+Hana Salvetová,Quentin Chappuis,Louis Martins, Kelu Huang and Nour Guermazi.
 ## How to use the dataset?
 1. Download the data [here](https://www.cs.cmu.edu/~ark/personas/)
 2. Create a folder `dataset/` at the root of the repo
 3. Unzip the data you downloaded in the dataset folder
 ## Research questions
-1. How have regional and global film industries evolved over time? How shifts in economic, culture, technological and demographic context influenced the development in filmmaking?
-2. How do films perform in terms of box office revenue both domestically and internationally? Which regions exhibit the highest preference for local films over global blockbusters, and why?
-3. How have regional specificities, including culturally significant themes, genres, and the presence of local actors, evolved over time in comparison to global filmmaking trends? In what ways does the shifting popularity and influence of local actors impact the success of films within their domestic markets over time, and how does this dynamic affect their international appeal?
-## Additional datasets
-To enrich our analysis and provide a more comprehensive understanding of global cinema trends, we integrated several external datasets:
+1.How have regional and global film industries transformed over time, and what roles have economic, cultural, technological, and demographic shifts played in shaping these changes?
+2. What patterns emerge in box office performance when comparing domestic and international markets, and which regions demonstrate the strongest preference for local films over global blockbusters?
+3. How have global genre trends evolved over time, and what do these trends reveal about the shifting preferences of international audiences? What do regional genre preferences reveal about the distinct tastes of local audiences?
+## Additional datasets 
+To enrich our analysis and provide a more comprehensive understanding of global cinema trends, we integrated several external datasets: 
 ### Economic Data
-- **Cost of Living**: cost-of-living_v2.csv – Contains data on average ticket prices and other living costs by country. 
-    [Download](https://www.kaggle.com/datasets/mvieira101/global-cost-of-living)
-
-- **Inflation Data (1970-2022)**: Global Dataset of Inflation.csv – Provides inflation rates globally, used to adjust box office revenue to constant dollars.
-    [Download](https://www.kaggle.com/datasets/belayethossainds/global-inflation-dataset-212-country-19702022)
-
-- **Inflation Data (1915-1969)**: Historical inflation data for adjusting older revenues to current dollars.
-    [Link to the data](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/)
-
 - **GDP Growth Data**: Global GDP growth data to understand the economic context of a region and its impact on the film industry.
     [Download](https://www.kaggle.com/datasets/sazidthe1/world-gdp-growth)
 
@@ -42,46 +37,46 @@ The provided dataset contains movie metadata (e.g., release dates, box office re
 <br>
 To provide a broader economic and demographic context, we supplement this with external datasets:
 
-- **Economic data**: average ticket prices, inflation rates, and GDP, essential for adjusting box office figures over 100 years of cinema history.
+- **Economic data**:  GDP for correlation analysis with box office revenue
 
-- **Demographic data**: population figures to better understand audience size and regional market characteristics.
+- **Demographic data**: Population figures to better understand audience size and regional market characteristics.
 
-- **Box office data**: an indicator on films success in terms of cinema entry sales.
+- **Box office data**: An indicator on films success in terms of cinema entry sales.
 
 ### Methods
 
-- **Data selection**: We identified relevant economic, demographic, and movie metadata to address research questions on global cinema trends.
 
-- **Data collection**: we downloaded datasets from Kaggle in .csv format, (inflation, population data) and we scrapped global and local box office revenues from "Box Office Mojo" and "The Numbers" to account for the high percentage of missing box office value in the movie metadata dataset.
 
-- **Data preprocessing**: cleaning and merging datasets to create a unified data frame, standardizing columns, filling missing values, and removing irrelevant data.
+- **Data selection**: We identified relevant economic, demographic, and movie metadata to address research questions on global cinema trends. 
 
-- **Mathematical adjustments**: applying normalization techniques, such as adjusting box office revenue for inflation, population size, and GDP per capita to allow meaningful comparisons.
+- **Data collection**: we downloaded datasets from Kaggle in .csv format, (inflation, population data) and we scrapped global and local box office revenues from "Box Office Mojo" and "The Numbers" to account for the high percentage of missing box office value in the CMU movie metadata dataset. We also completed those by scrapping Wikidata (the data are in query.csv). Finally for scrapping the domestic and international box office data, we used the GPT API.
 
-- **Visualization**: using matplotlib and seaborn to create heatmaps, box plots, and line charts that reveal trends and patterns in box office success, genre popularity, and ticket prices across countries.
+- **Data preprocessing**: Cleaning and merging datasets to create a unified data frame including columns standardizartion, filling missing values, removing irrelevant data but also data cleaning/normalization ensuring textual consistency (for example using a uniform naming convention for "China"). This improves data quality and avoids issues like duplicates caused by different representations of the same entity. 
 
-- **Country selection**: to determine the most impactful countries in the film industry, we selected nations from each region of the world, ensuring a minimum of two per region. Our selection focused on countries with the highest box office revenues, making them the most relevant for our study.
+- **Visualization and analysis**: 
+Our analysis employs a combination of statistical techniques, machine learning, and advanced visualizations to investigate the globalization of cinema and its driving factors. Specifically, we focus on the following approaches:
+We used Python visualization libraries, such as Matplotlib, Seaborn, and Plotly, to explore and communicate insights effectively. Key visualizations include:
+    1. Pie charts to analyze the proportions of domestic versus international revenue for different countries, highlighting regional preferences. <br>
+    2. Time-series analysis with line plots to track trends in genre popularity, regional box office revenue, and the impact of significant historical events on filmmaking. <br>
+    3. Correlation analysis using a heatmap to examine how economic and demographic factors influence the success of local films and Hollywood blockbusters. <br>
+    4. To complement the correlation analysis we used regression models and clustering techniques to predict revenue using the same demographic and economic data used for correlation analysis.<br>
+    5. We also performed some statistical tests (e.g., Kolmogorov-Smirnov tests)for we compared pre- and post-COVID box office performance for selected countries, assessing the significance of observed differences.
 
-### Timeline
-
-- **Week 1**: Detailed analysis of datasets, conduct data cleaning and pre processing 
-
-- **Week 2**: Implement methods to answer proposed research questions 1
-
-- **Week 3**: Implement methods to answer proposed research questions 2
-
-- **Week 4**:  Implement methods to answer proposed research questions 3
-
-- **Week 5**: Gather all results and synthesize our findings in the final version of the data story, publish it on GitHub.
+- **Country selection**: To determine the most impactful countries in the film industry (and also avoiding analysis of countries with nearly no data), we selected nations from each region of the world, ensuring a minimum of one per region. Our selection focused on countries with the highest box office revenues, making them the most relevant for our study.
 
 ### Organization within the team
 
-- **Hana** will take care of the data cleaning and preprocessing. She will ensure the datasets are ready for analysis by removing irrelevant data, filling missing values, and standardizing columns across datasets.
+- **Hana** took care of the data cleaning and preprocessing. She ensured the datasets are ready for analysis by removing irrelevant data, filling missing values, and standardizing columns across datasets. She also worked on data visualization with Quentin.
 
-- **Louis** will handle the mathematical methods, focusing on normalization and statistical analysis. He will integrate inflation data to adjust box office figures, allowing for accurate historical comparisons.
+- **Louis** handled the mathematical methods, focusing on statistical analysis such as hypothesis testing to assess the significance of observed trends and relationships in the data, helping to validate our findings and strengthen the conclusions drawn from the research.
 
-- **Quentin** will develop extensive visualization methods tailored to each research question. He will use tools like matplotlib and seaborn to create heatmaps, box plots, and line charts that illustrate trends and patterns across various datasets.
+- **Quentin** developed extensive visualization methods tailored to each research question, using tools like matplotlib and seaborn to create heatmaps, box plots, and line charts that illustrate trends and patterns across various datasets.
 
-- **Kelu** will synthesize all results into coherent findings. He will prepare the final data story by collating insights from each analysis phase and ensuring they are clearly communicated.
+- **Kelu** synthesized all results into coherent findings. He prepared the final data story by collating insights from each analysis phase and ensuring they are clearly communicated.
 
-- **Nour** will lead the writing of the data story, focusing on articulating the project's findings and implications. She will develop the website representing the project.
+- **Nour** led the writing of the data story, focusing on articulating the project's findings and implications. She also developed the website representing the project.
+
+### Architecture of the project
+```tree
+
+```
