@@ -78,5 +78,39 @@ We used Python visualization libraries, such as Matplotlib, Seaborn, and Plotly,
 
 ### Architecture of the project
 ```tree
-
+└───ada-2024-project-l-ekip
+    │   .gitignore
+    │   README.md
+    │   requirements.txt
+    │   results.ipynb
+    │
+    ├───data
+    │       Cleaned_Final_Dataset.csv
+    │       CMU_clead_ready_to_merge.csv
+    │       CMU_Other_dataset.csv
+    │       Cumulative_Movie_Production_Data.csv
+    │       dataset_with_domestic_boxoffice.csv
+    │       df_movies_preprocessed.csv
+    │       events.csv
+    │       Final_Dataset.csv
+    │       genres.csv
+    │       query.csv
+    │       world_gdp_2.csv
+    │       world_population_2.csv
+    │
+    └───src
+        ├───data
+        │       boxoffice_api_request.ipynb
+        │       dataset_creation.ipynb
+        │
+        ├───models
+        │       models.py
+        │
+        ├───scripts
+        │       mojoboxoffice_scraper.ipynb
+        │       scrapingthenumbers.ipynb
+        │
+        └───utils
+                preprocessing.py
+                utils.py
 ```

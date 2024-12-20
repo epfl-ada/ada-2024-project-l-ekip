@@ -4,3 +4,12 @@ matplotlib==3.9.2
 seaborn==0.13.2
 beautifulsoup4==4.12.3
 requests==2.32.2
+seaborn
+geopandas
+plotly
+scipy
+scikit-learn
+langchain
+openai
+nbformat
+langchain_openai
